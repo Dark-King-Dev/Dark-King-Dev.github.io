@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('./config/db_config.php');
+include('db_config.php');
 $datos= mysqli_query($conexion, "SELECT * FROM player WHERE name = '".$_SESSION['name']."' ");
 $datos=mysqli_fetch_array($datos);
 $nombre=$datos['name'];
