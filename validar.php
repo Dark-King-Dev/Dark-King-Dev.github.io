@@ -1,7 +1,7 @@
 <?php
 //Conexion a nuestra base de datos
   session_start();
-  include('./config/db_config.php');
+  include('db_config.php');
 
   $name = $_POST['name'];
   $password = $_POST['password'];
